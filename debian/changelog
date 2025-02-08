@@ -1,5 +1,89 @@
-template-repository (1.0-1) unstable; urgency=medium
+tao-pegtl (3.2.7-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Birger Schacht <birger@debian.org>  Sat, 06 Aug 2022 16:12:35 +0200
+
+tao-pegtl (3.2.6-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 4.6.1.0 (no changes required)
+  * Switch to gitmode in d/watch
+  * Add upstream signing key
+
+ -- Birger Schacht <birger@debian.org>  Mon, 04 Jul 2022 15:36:33 +0200
+
+tao-pegtl (3.2.5-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Birger Schacht <birger@debian.org>  Sun, 03 Apr 2022 21:20:28 +0200
+
+tao-pegtl (3.2.5-1) experimental; urgency=medium
+
+  * New upstream release (Closes: #1000987)
+  * Update year range in d/copyright stanza for debian/*
+  * Bump standards-version to 4.6.0.1 (no changes required)
+  * Add Bug-Database to d/upstream/metadata
+
+ -- Birger Schacht <birger@debian.org>  Tue, 01 Mar 2022 10:27:36 +0100
+
+tao-pegtl (2.8.3-3) unstable; urgency=medium
+
+  * d/rules: force -Wno-error=type-limits to enable build with gcc 10
+    (Closes: #978520)
+  * d/control: bump standards-version to 4.5.1 (no changes required)
+
+ -- Birger Schacht <birger@debian.org>  Wed, 30 Dec 2020 16:23:59 +0100
+
+tao-pegtl (2.8.3-2) unstable; urgency=medium
+
+  * Force the use of gcc-9 until upstream is ready for
+    gcc-10 (Closes: #966856)
+  * d/control
+   + update maintainer address
+   + bump debhelper-compat version
+   + update Vcs-* URLs
+
+ -- Birger Schacht <birger@debian.org>  Mon, 03 Aug 2020 17:28:34 +0200
+
+tao-pegtl (2.8.3-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add Repositoy and Repository-Browse to the upstream
+    metadata file
+
+ -- Birger Schacht <birger@rantanplan.org>  Mon, 04 May 2020 08:50:40 +0200
+
+tao-pegtl (2.8.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * d/control: Bump standards-version to 4.5.0 (no changes required)
+
+ -- Birger Schacht <birger@rantanplan.org>  Sun, 05 Apr 2020 21:56:50 +0200
+
+tao-pegtl (2.8.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * d/control
+   + Bumped standards version to 4.4.1 (no changes required to make
+     package compliant)
+   + Added Rules-Requires-Root: no
+  * Drop unneeded variable from d/gitlab-ci.yml
+  * Switch Build-Dependency from debhelper to debhelper-compat
+
+ -- Birger Schacht <birger@rantanplan.org>  Fri, 04 Oct 2019 17:54:31 +0200
+
+tao-pegtl (2.7.1-1) unstable; urgency=medium
+
+  * Add a gitlab-ci.yml file
+  * New upstream version 2.7.1
+  * Add missing Vcs-* fields (Closes: #908458)
+
+ -- Birger Schacht <birger@rantanplan.org>  Tue, 02 Oct 2018 16:32:14 +0200
+
+tao-pegtl (2.7.0-1) unstable; urgency=low
+
+  * Initial release. Closes: #905853
+
+ -- Birger Schacht <birger@rantanplan.org>  Tue, 07 Aug 2018 20:30:15 +0200
