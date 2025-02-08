@@ -1,4 +1,11 @@
 #!/usr/bin/make -f
 
+export DEB_CXXFLAGS_MAINT_APPEND += -Wno-error=type-limits
+
 %:
-	dh $@
+	dh $@ --buildsystem=cmake
+
+override_dh_auto_install:
+	dh_auto_install
+	find ./debian -type f -name "LICENSE" -delete
+	find ./debian -type d -empty -delete
